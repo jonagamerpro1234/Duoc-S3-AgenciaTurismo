@@ -66,6 +66,10 @@ Clase base que almacena información general de una persona.
 
 Permite almacenar y validar el RUT de una persona.
 
+### InvalidRutException
+
+Excepción personalizada utilizada cuando el RUT ingresado no cumple con el formato esperado.
+
 ### Empleado
 
 Clase derivada de Persona que incorpora una especialidad.
