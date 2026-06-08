@@ -12,7 +12,16 @@ public class Rut {
     private final String numero;
 
     /**
-     * Contractor base que permite añadir el RUT
+     * Crea un nuevo objeto Rut.
+     * <p>
+     * El valor ingresado debe respetar el formato:
+     * números, guion y dígito verificador.
+     * <p>
+     * Ejemplo:
+     * 12345678-9
+     *
+     * @param rut RUT a almacenar
+     * @throws InvalidRutException si el formato no es válido
      */
     public Rut(@NotNull String rut)  {
         if(!rut.matches("[0-9]+-[0-9kK]")){
@@ -28,4 +37,10 @@ public class Rut {
         return numero;
     }
 
+    @Override
+    public String toString() {
+        return "Rut{" +
+                "numero='" + numero + '\'' +
+                '}';
+    }
 }

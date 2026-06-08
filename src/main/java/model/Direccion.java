@@ -1,11 +1,24 @@
 package model;
 
+/**
+ * Representa la dirección asociada a una persona.
+ * <p>
+ * Una dirección está compuesta por comuna,
+ * calle y ciudad.
+ */
 public class Direccion {
 
     private String comuna;
     private String calle;
     private String ciudad;
 
+    /**
+     * Constructor principal de la clase Dirección.
+     *
+     * @param comuna comuna de residencia
+     * @param calle calle de residencia
+     * @param ciudad ciudad de residencia
+     */
     public Direccion(String comuna, String calle, String ciudad) {
         this.comuna = comuna;
         this.calle = calle;
@@ -36,6 +49,12 @@ public class Direccion {
         this.ciudad = ciudad;
     }
 
+    /**
+     * Retorna una representación en texto
+     * de la dirección almacenada.
+     *
+     * @return información de la dirección
+     */
     @Override
     public String toString() {
         return "Direccion{" +
