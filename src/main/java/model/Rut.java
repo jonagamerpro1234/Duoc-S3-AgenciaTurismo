@@ -1,24 +1,31 @@
 package model;
 
+import org.jetbrains.annotations.NotNull;
 import util.InvalidRutException;
 
 /**
- * La clase rut permite validar y almacenar el Rol Unico tributario de la persona
+ * La clase rut permite validar y almacenar el RUT de la persona
  *
  */
 public class Rut {
 
-    private String rut;
+    private final String numero;
 
-    public Rut(String rut) throws InvalidRutException {
-        this.rut = rut;
+    /**
+     * Contractor base que permite añadir el RUT
+     */
+    public Rut(@NotNull String rut)  {
+        if(!rut.matches("[0-9]+-[0-9kK]")){
+            throw new InvalidRutException("El rut no es valido");
+        }
+        this.numero = rut;
     }
 
+    /**
+     * Retorna el RUT almacenado
+     */
     public String getRut() {
-        return rut;
+        return numero;
     }
 
-    public void setRut(String rut) {
-        this.rut = rut;
-    }
 }
