@@ -39,8 +39,6 @@ public class Rut {
 
     @Override
     public String toString() {
-        return "Rut{" +
-                "numero='" + numero + '\'' +
-                '}';
+        return this.numero;
     }
 }

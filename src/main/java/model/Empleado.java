@@ -42,9 +42,8 @@ public class Empleado extends Persona {
      */
     @Override
     public String toString() {
-        return "Empleado{" +
+        return "Empleado: \n" +
                 super.toString() +
-                ",\nespecialidad='" + especialidad + '\'' +
-                '}';
+                ",\nEspecialidad: " + especialidad;
     }
 }

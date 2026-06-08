@@ -57,10 +57,6 @@ public class Direccion {
      */
     @Override
     public String toString() {
-        return "Direccion{" +
-                "comuna='" + comuna + '\'' +
-                ", calle='" + calle + '\'' +
-                ", ciudad='" + ciudad + '\'' +
-                '}';
+        return this.calle + ", " + this.comuna + ", " + this.ciudad;
     }
 }
