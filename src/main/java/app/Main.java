@@ -32,7 +32,7 @@ public class Main {
 
         //Mensajes a mostrar en consola
 
-        //1.
+        //1. prueba de instancias
         System.out.println(empleado.toString() + "\n------------------");
         //2.
         System.out.println(empleado2.toString() + "\n------------------");
