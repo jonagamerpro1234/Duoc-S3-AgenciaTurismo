@@ -62,6 +62,10 @@ Representa la dirección asociada a una persona.
 
 Clase base que almacena información general de una persona.
 
+### Rut
+
+Permite almacenar y validar el RUT de una persona.
+
 ### Empleado
 
 Clase derivada de Persona que incorpora una especialidad.
